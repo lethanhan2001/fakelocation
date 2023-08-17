@@ -1,0 +1,17 @@
+* {
+    margin-top: 0%;
+    justify-content: center; 
+}
+.row .card1 {
+    
+    width: 150px;
+    border: 0 solid;
+
+}
+.row .image {
+    
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    
+}
