@@ -19,7 +19,7 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const res = await axios.post("http://14.225.7.221:3002/login", {
+      const res = await axios.post("http://14.225.7.221:3005/login", {
         email: email,
         password: password,
       });
