@@ -65,7 +65,7 @@ function FileUploadPage(props) {
       formData.append("imagebackground", image.image2);
       try {
         const response = await axios.post(
-          "http://14.225.7.221:3002/change_background",
+          "http://14.225.7.221:3005/change_background",
           formData,
           {
             headers: {

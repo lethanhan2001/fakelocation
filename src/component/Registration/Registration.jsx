@@ -73,7 +73,7 @@ function Registration() {
 
       try {
         const res = await axios.post(
-          "http://14.225.7.221:3002/register",
+          "http://14.225.7.221:3005/register",
           registrationData
         );
         console.log(res.data.account, {
