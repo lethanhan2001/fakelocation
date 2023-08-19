@@ -10,6 +10,27 @@ code {
     monospace;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4e3d3d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f3acf;
+  border-radius: 4px;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

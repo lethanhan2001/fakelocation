@@ -3,7 +3,7 @@ import axios from "axios";
 import "./signup.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import bg from "../images/thinkdiff.jpg";
 import bg2 from "../images/vector15.png";
@@ -73,7 +73,7 @@ function Registration() {
 
       try {
         const res = await axios.post(
-          "http://14.225.7.221:3002/register",
+          "http://14.225.7.221:3005/register",
           registrationData
         );
         console.log(res.data.account, {
@@ -222,9 +222,12 @@ function Registration() {
               className="bg-[rgba(255,255,255,0.3)] border-2 border-white text-white w-[250px] py-2 font-bold cursor-pointer rounded-3xl"
               type="submit"
             >
-              <Link className="text-white text-decoration-none" to={`/Login`}>
+              <NavLink
+                className="text-white text-decoration-none"
+                to={`/Login`}
+              >
                 Login
-              </Link>
+              </NavLink>
             </button>
           </div>
         </div>
