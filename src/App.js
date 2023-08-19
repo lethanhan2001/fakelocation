@@ -12,7 +12,7 @@ function App() {
     <>
       <ToastContainer />
       <Routes>
-        <Route path="/Home" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/Registration" element={<Registration />}></Route>
         <Route path="/Login" element={<Login />}></Route>
         <Route path="/Reset" element={<Reset />}></Route>

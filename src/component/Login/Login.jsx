@@ -25,7 +25,7 @@ function Login() {
       });
       console.log(res.data);
       toast.success("Đăng nhập thành công");
-      navigate("/Home");
+      navigate("/");
     } catch (error) {
       toast.error(error.message);
       console.log("sai ", error);
