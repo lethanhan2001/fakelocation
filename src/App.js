@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Reset from "./component/Reset";
 import Edit from "./component/edit/Edit";
+import Profile from "./component/Profile/Profile";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Login" element={<Login />}></Route>
         <Route path="/Reset" element={<Reset />}></Route>
         <Route path="/edit" element={<Edit />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
       </Routes>
     </>
   );
